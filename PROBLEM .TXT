@@ -1,0 +1,35 @@
+PROBLEM-------------------------------
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. 
+Find the sum of all the multiples of 3 or 5 below 1000.
+
+ALGORITHM-----------------------------
+  I.Initialize integer value sum as 0.
+ II.Start a loop from 0 to 1000, loop value incrementing each time by 3.
+III.Add that value to sum and repeat until value is 1000.
+ IV.End the loop.
+  V.Start another loop from 0 to 1000, this time loop value incrementing each time by 5.
+ VI.Add that value to sum and repeat until value is 1000.
+
+PSEUDOCODE---------------------------
+Set integer sum as 0
+Input integer i
+for (i=0) do
+  	Add i to sum
+  	Increment i by 3
+Repeat until (i=1000)
+End do
+End for
+for (i=0) do
+  	Add i to sum
+  	Increment i by 5
+Repeat until (i=1000)
+End do
+End for
+for (i=0) do
+  	Subtract i from sum
+  	Increment i by 15
+Repeat until (i=1000)
+End do
+End for
+Print sum
+
